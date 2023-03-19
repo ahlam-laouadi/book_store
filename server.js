@@ -15,7 +15,7 @@ app.use(express.static(path.join(__dirname,'assets')))
 app.set('view engine','ejs')
 app.set('views','views')
 var Store=new MongoDbStore({
-    uri:'mongodb://localhost:27017/library',
+    uri:'',
     collection:"sessions"
 })
 app.use(flash())
